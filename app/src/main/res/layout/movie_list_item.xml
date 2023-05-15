@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="15dp"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="#3CD0BBF4">-->
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_15mdp"
+    android:layout_marginTop="@dimen/_10mdp"
+    android:layout_marginRight="@dimen/_15mdp"
+    android:layout_marginBottom="@dimen/_5mdp"
+
+    app:cardCornerRadius="8dp"
+    app:cardElevation="@dimen/_10mdp">
+
+    <TextView
+        android:id="@+id/toStoreIdOfMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/movie_img"
+            android:layout_width="@dimen/_50mdp"
+            android:layout_height="@dimen/_70mdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/binge_logo" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="0dp">
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="Movie Title"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+
+                <TextView
+                    android:id="@+id/releaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:gravity="start"
+                    android:text="release date"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movieLang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:text="language"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:numStars="5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|right"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/add_box" />
+
+</androidx.cardview.widget.CardView>
+<!--</LinearLayout>-->

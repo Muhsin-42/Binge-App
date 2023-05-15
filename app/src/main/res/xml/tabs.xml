@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tabs xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tab
+        drawable="@drawable/ic_movie_foreground"
+        text="@string/movies" />
+    <tab
+        drawable="@drawable/ic_discover_foreground"
+        text="@string/discover" />
+    <tab
+        drawable="@drawable/ic_notifications"
+        text="@string/notification" />
+    <tab
+        drawable="@drawable/ic_profile_foreground"
+        text="@string/profile" />
+</Tabs>

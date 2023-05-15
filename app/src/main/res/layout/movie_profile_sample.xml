@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6mdp"
+    app:cardBackgroundColor="@color/teal_700"
+    app:cardCornerRadius="@dimen/_15mdp"
+    app:cardElevation="@dimen/_8mdp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/riv_movie"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_150mdp"
+        android:elevation="@dimen/_40mdp"
+        android:src="@drawable/fight"
+        app:riv_corner_radius="@dimen/_8mdp" />
+
+</androidx.cardview.widget.CardView>
